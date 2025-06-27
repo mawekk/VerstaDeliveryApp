@@ -3,9 +3,9 @@
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 // </copyright>
 
-using VerstaDeliveryApp.API.Models;
-
 namespace VerstaDeliveryApp.API;
+
+using VerstaDeliveryApp.API.Models;
 
 /// <summary>
 /// Class for delivery order endpoints.

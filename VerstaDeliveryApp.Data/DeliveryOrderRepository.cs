@@ -17,7 +17,7 @@ public class DeliveryOrderRepository(AppDbContext context)
     /// Creates new delivery order.
     /// </summary>
     /// <param name="order">New delivery order.</param>
-    public async Task Create(DeliveryOrder? order)
+    public async Task Create(DeliveryOrder order)
     {
         await context.DeliveryOrders.AddAsync(order);
         await context.SaveChangesAsync();
