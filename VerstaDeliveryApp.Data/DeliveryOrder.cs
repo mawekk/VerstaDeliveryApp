@@ -26,14 +26,14 @@ public class DeliveryOrder
     public required string SenderAddress { get; set; }
 
     /// <summary>
-    /// Gets or sets order recipient's city.
+    /// Gets or sets order receiver's city.
     /// </summary>
-    public required string RecipientCity { get; set; }
+    public required string ReceiverCity { get; set; }
 
     /// <summary>
-    /// Gets or sets order recipient's address.
+    /// Gets or sets order receiver's address.
     /// </summary>
-    public required string RecipientAddress { get; set; }
+    public required string ReceiverAddress { get; set; }
 
     /// <summary>
     /// Gets or sets order cargo weight.

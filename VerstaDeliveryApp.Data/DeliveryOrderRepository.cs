@@ -17,7 +17,7 @@ public class DeliveryOrderRepository(AppDbContext context)
     /// Creates new delivery order.
     /// </summary>
     /// <param name="order">New delivery order.</param>
-    public async Task Create(DeliveryOrder order)
+    public async Task Create(DeliveryOrder? order)
     {
         await context.DeliveryOrders.AddAsync(order);
         await context.SaveChangesAsync();
@@ -27,10 +27,10 @@ public class DeliveryOrderRepository(AppDbContext context)
     /// Gets delivery order by Id.
     /// </summary>
     /// <param name="id">Delivery order Id.</param>
-    public async Task GetById(int id) => await context.DeliveryOrders.FirstOrDefaultAsync(order => order.Id == id);
+    public async Task<DeliveryOrder?> GetById(int id) => await context.DeliveryOrders.FirstOrDefaultAsync(order => order.Id == id);
 
     /// <summary>
     /// Gets all delivery orders.
     /// </summary>
-    public async Task GetAll() => await context.DeliveryOrders.ToListAsync();
+    public async Task<List<DeliveryOrder>> GetAll() => await context.DeliveryOrders.ToListAsync();
 }
