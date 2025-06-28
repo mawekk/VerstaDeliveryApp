@@ -407,3 +407,4 @@ FodyWeavers.xsd
 .idea
 
 VerstaDeliveryApp.Data/Migrations
+pg-data
