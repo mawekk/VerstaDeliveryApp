@@ -1,5 +1,5 @@
 import {Container, Button, Alert, Navbar} from 'react-bootstrap'
-import DeliveryOrdersPage from './DeliveryOrdersPage.jsx'
+import DeliveryOrdersPage from './pages/DeliveryOrdersPage.jsx'
 
 export default function App() {
     return (
