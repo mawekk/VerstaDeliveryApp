@@ -86,3 +86,6 @@
    ```shell
    docker-compose down
    ```
+
+Веб-приложение будет доступно по адресу: http://localhost:5173/
+
